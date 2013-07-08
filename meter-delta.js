@@ -62,7 +62,7 @@ function MeterDelta(userOptions) {
         options.onBar(current, next);
     }
     function start() {
-        if (isRunning) {
+        if (isRunning()) {
             throw new Error("This instance is already running");
         } else {
             options.onStart();
