@@ -1,0 +1,50 @@
+.meter-delta-controls input {
+    width: 100px;
+    padding: 5px;
+    clear: both;
+    float: left;
+}
+
+.meter-delta-controls label {
+    width: 100px;
+    padding: 5px;
+    float: left;
+}
+
+.meter-delta-display {
+    clear: both;
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+}
+
+.meter-delta-display .current {
+    float: left;
+    width: 200px;
+    height: 200px;
+    font-size: 60pt;
+    line-height: 60pt;
+}
+
+.meter-delta-display .next {
+    float: left;
+    width: 150px;
+    height: 150px;
+    font-size: 40pt;
+    line-height: 40pt;
+    opacity: 0.6;
+}
+
+.meter-delta-display .note-count, .meter-delta-display .note-value {
+    display: block;
+    width: 100%
+}
+
+.meter-delta-display .beat-indicator {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 10px;
+    width: 100%;
+    background-color: #666;
+}
