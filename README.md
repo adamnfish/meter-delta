@@ -6,16 +6,17 @@ changing meters in American (which is the inspiration for the name).
 ## Using Meter Delta
 
 Meter Delta is a JavaScript library you can use to handle dynamic time
-signatures. It takes care of the counting and timings for you, but
-does not yet offer a UI. Rather, you can interact with Meter Delta
-using its callbacks within your own UI.
-
-Meter Delta will offer some kind of UI at some stage in the future but
-don't wait for that, it's very easy to use!
+signatures that takes care of the counting and timings for you. You
+can interact with Meter Delta using its callbacks within your own UI,
+or use the simple UI that is provided.
 
 ### Examples
 
-Here are some usage examples. Full documentation is provided below.
+Here are some usage examples of using the library. Full documentation
+is provided below.
+
+For examples on how to use the provided UI, see the documentation in
+the UI directory.
 
 #### Very simple usage
 
