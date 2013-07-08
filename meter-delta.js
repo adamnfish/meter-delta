@@ -11,7 +11,7 @@ function MeterDelta(userOptions) {
                 [ [3, 8], [5, 8], [11, 8], [13, 8] ],
                 [ [3, 16], [5, 16], [7, 16], [9, 16], [11, 16], [13, 16], [15, 16] ]
             ],
-            onBeat: function(barBeatCount, inaccuracy) {},
+            onBeat: function(barBeatCount, current, totalBarBeats, inaccuracy) {},
             onBar: function(current, next) {},
             onStop: function() {},
             onStart: function() {}
@@ -45,7 +45,7 @@ function MeterDelta(userOptions) {
         beatCount++;
         var msToNextBeat = Math.floor(startTime + (beatCount * beatMs) - (+new Date));
         timer = setTimeout(function(){ tick(); }, msToNextBeat);
-        options.onBeat(barBeatCount, msToNextBeat - beatMs);
+        options.onBeat(barBeatCount, current, targetBarBeatCount, msToNextBeat - beatMs);
     }
     function pickNewSig() {
         if (!current || (Math.floor(Math.random() * 100) <= options.variance)) {
