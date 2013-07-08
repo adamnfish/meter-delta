@@ -48,7 +48,7 @@ function MeterDelta(userOptions) {
         options.onBeat(barBeatCount, msToNextBeat - beatMs);
     }
     function pickNewSig() {
-        if (!current || (Math.floor(Math.random() * 100) >= options.variance)) {
+        if (!current || (Math.floor(Math.random() * 100) <= options.variance)) {
             return eligibleSigs[Math.floor(Math.random() * eligibleSigs.length)];
         } else {
             return current;
